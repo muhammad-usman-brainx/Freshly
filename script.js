@@ -178,7 +178,7 @@ $(document).ready(function(){
 function fourfive(){
     localStorage.setItem("min", 4);
     localStorage.setItem("max", 5);
-    window.location('index2.html');
+    window.location.replace('index2.html');
 }
 
 function sixseven(){
@@ -551,7 +551,7 @@ function fillmealsPage(){
                     document.getElementById('orderSummary').classList.add('d-none');
                     document.getElementById('orderSummary2').classList.add('d-none');
                     document.getElementById('clearallup').classList.add('d-none');
-                    //document.getElementById('subtotalText').innerText = '';
+                    document.getElementById('ogprice').innerText = '';
                 }
                 if(count == min){
                     document.getElementById('saving-line').innerText = 'Add 2 more meals to save $10.80';
@@ -879,7 +879,7 @@ function fillmealsPage(){
                     document.getElementById('orderSummary').classList.add('d-none');
                     document.getElementById('orderSummary2').classList.add('d-none');
                     document.getElementById('clearallup').classList.add('d-none');
-                    //document.getElementById('subtotalText').innerText = '';
+                    document.getElementById('ogprice').innerText = '';
                 }
                 if(count == min){
                     document.getElementById('saving-line').innerText = 'Add 2 more meals to save $10.80';
@@ -1206,7 +1206,8 @@ function fillmealsPage(){
                 if(count == 0){
                     document.getElementById('orderSummary').classList.add('d-none');
                     document.getElementById('orderSummary2').classList.add('d-none');
-                    //document.getElementById('subtotalText').innerText = '';
+                    document.getElementById('clearallup').classList.add('d-none');
+                    document.getElementById('ogprice').innerText = '';
                 }
                 if(count == min){
                     document.getElementById('saving-line').innerText = 'Add 2 more meals to save $10.80';
