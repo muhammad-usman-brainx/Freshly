@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBMPlexSans">
+  <link rel="stylesheet" href="style.css" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+
+</head>
+<body onload="fillFood()">
+    <div class="header-top text-center">
+        <img class="me-4" src="freshly-removebg-preview.png" alt="topImage" height="auto" width="55px"/>
+        <img src="fresh2-removebg-preview.png" height="auto" width="90px" alt="topImage" />
+    </div>
+    <div class="container-fluid sticky-head bg-color">
+        <div class="container mt-1">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <img src="freshly-removebg-preview.png" width="100px" height="auto" class="navbar-brand" />
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto me-auto">
+                        <a class="nav-item nav-link text-dark nav-item-font mx-1" href="#">Plans & Menu </a>
+                        <a class="nav-item nav-link text-dark nav-item-font mx-1" href="#">How it Works</a>
+                        <a class="nav-item nav-link text-dark nav-item-font mx-1" href="#">Gifts</a>
+                        <a class="nav-item nav-link text-dark nav-item-font mx-1" href="#">Refer a Friend</a>
+                        <a class="nav-item nav-link text-dark nav-item-font mx-1" href="#">Help</a>
+                    </div>
+                    <div class="login-signup">
+                        <button title="Login" class="login-nav" >Login</button>
+                        <button title="Sign Up" class="signup-nav" >Sign Up</button>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="container d-flex flex-column align-items-center">
+        <img class="mt-5" src="ccccccccc-removebg-preview.png" width="200px" height="auto" alt="centeredimage" />
+        <h1 class="mb-1 text-center">Flexible plans that fit your life</h1>
+        <p class="text-meals text-center">We offer anywhere from 4-12 meals per week, with meals as low as <span class="dollar">$8.99 each</span>. <strong>The<br> bigger your box, the more you’ll save</strong> —and you can always pause, cancel, or change<br> your plan at any time.</p>
+    </div>
+    <div class="container five-img-container d-flex justify-content-center align-items-center text-center mt-5">
+        <div class="row ">
+            <div class="col-lg col-6">
+                <a href="index2.html" onclick="fourfive()" class="a-images d-inline-flex flex-column">
+                    <img src="food3.PNG"  class="five-images"/>
+                    <span class="fiver-text">4-5 Meals</span>
+                </a>
+            </div>
+            <div class="col-lg col-6">
+                <a href="index2.html" onclick="sixseven()" class="a-images d-inline-flex flex-column">
+                    <div class="meal-img-text">
+                        <img src="food1.PNG"  class="five-images"/>
+                        <p class="saving-text">Save up to 12$</p>
+                    </div>
+                    <span class="fiver-text">6-7 Meals</span>
+                </a>
+            </div>
+            <div class="col-lg col-6">
+                <a href="index2.html" onclick="eightnine()"  class="a-images d-inline-flex flex-column">
+                    <div class="meal-img-text">
+                        <img src="food2.PNG"  class="five-images"/>
+                        <p class="saving-text">Save up to 15$</p>
+                    </div>
+                    <span class="fiver-text">8-9 Meals</span>
+                </a>
+            </div>
+            <div class="col-lg col-6">
+                <a href="index2.html" onclick="teneleven()" class="a-images d-inline-flex flex-column">
+                    <div class="meal-img-text">
+                        <img src="food3.PNG"  class="five-images"/>
+                        <p class="saving-text">Save up to 22$</p>
+                    </div>
+                    <span class="fiver-text">10-11 Meals</span>
+                </a>
+            </div>
+            <div class="col-lg col-12">
+                <a href="index2.html" onclick="twelve()" class="a-images d-inline-flex flex-column">
+                    <div class="meal-img-text">
+                        <img src="food3.PNG"  class="five-images f-12"/>
+                        <p class="saving-text">Save up to 33$</p>
+                    </div>
+                    <span class="fiver-text">12 Meals</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex flex-column align-items-center">
+        <div>
+            <p class="shipping-line">Shipping and tax added at checkout</p>
+        </div>
+        <div class="w-100 d-flex align-items-center justify-content-center">
+            <button onclick="fourfive()" class="get-started-button mt-2 mb-5 btn btn-large btn-primary">Get Started</button>
+        </div>
+    </div>
+    <div class="container d-flex flex-column align-items-center margin-top">
+        <h1 class="heading-font">On the Menu</h1>
+        <p class="text-meals text-center">Whatever your lifestyle, Freshly’s got you covered—with <a href="#">gluten-free</a>, dairy-free, <a href="#">plant-based</a>, and <br> low-calorie meal options! Our low-lift lunches and done-for-you dinners provide an effortless<br> alternative to everyday cooking, with nutritious prepared meals delivered to your door. Explore<br> this week’s dishes and start eating better:</p>
+        <div class="dropdown mt-3 mb-5">
+            <label for="menu" class="menu-cat">Menu Category: </label>
+            <select name="menu" id="menu">
+                <option value="volvo">All Meals</option>
+                <option value="saab">Purely Plant</option>
+                <option value="opel">Signature Collection</option>
+                <option value="audi">freshly Fit</option>
+                <option value="audi">Proteins & Sides</option>
+            </select>
+        </div>
+    </div>
+    <!--Food Itemsssssssssss-->
+
+    <div class="food-display" id="added-food">
+
+        <!-- <div class="container-fluid d-flex justify-content-center images-food">
+            <div class="row mb-3 mt-1">
+                <div class="col-lg-3 col-6 food-img-padding">
+                    <a href="#" class="a-images d-inline-flex flex-column">
+                        <div class="food-zoom">
+                            <img class="food-img" src="food1.PNG"/> 
+                        </div>
+                        <span class="d-inline-block mt-1 text-dark food-img-heading">Steak PepperCorn</span>
+                        <span class="text-muted mt-1 food-img-subheading">500 cal | Gluten Free | Single Serv</span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-6 food-img-padding">
+                    <a href="#" class="a-images d-inline-flex flex-column">
+                        <div class="food-zoom"><img class="food-img" src="food2.PNG"/> </div>
+                        <span class="d-inline-block mt-1 text-dark food-img-heading">HomeStyle Chicken</span>
+                        <span class="text-muted mt-1 food-img-subheading">560 cal | Gluten Free | Single Serv</span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-6 food-img-padding">
+                    <a href="#" class="a-images d-inline-flex flex-column">
+                        <div class="food-zoom"><img class="food-img" src="food3.PNG"/> </div>
+                        <span class="d-inline-block mt-1 text-dark food-img-heading">Caulliflower Shell Beef Bolognese</span>
+                        <span class="text-muted mt-1 food-img-subheading">490 cal | Gluten Free | Single Serv</span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-6 food-img-padding">
+                    <a href="#" class="a-images d-inline-flex flex-column">
+                        <div class="food-zoom"><img class="food-img" src="food4.PNG"/> </div>
+                        <span class="d-inline-block mt-1 text-dark food-img-heading">Sausage Baked Penne</span>
+                        <span class="text-muted mt-1 food-img-subheading">470 cal | Gluten Free | Single Serv</span>
+                    </a>
+                </div>
+            </div>
+        </div> -->
+        
+    </div>
+    <!-- -->
+
+    <div class="bg-color pb-3">
+
+        <div class="container d-flex flex-column align-items-center margin-top mb-5">
+            <h1 class="heading-font text-center mt-5">For Every Diet & Lifestyle</h1>
+            <p class="text-meals text-center mt-4">We’re here to make every dish delicious and nutritious, with prepared meals that satisfy a wide<br> range of tastes—all meticulously crafted to meet your dietary wants and needs.</p>
+        </div>
+
+        <div class="container d-flex justify-content-around text-center margin-top mb-5">
+            <div class="row">
+                <div href="#" class="col-md col-12 d-inline-flex flex-column align-items-center">
+                    <img src="deal1.png" width="auto" height="130px" class="mb-4"/>
+                    <h4 class="d-inline-block mb-2">Purely Plant</h4>
+                    <span class="d-inline-block mb-4 smol-text">Plant based meals for<br> everyone</span>
+                    <span><a class="smol-text mb-3" href="#">Learn More</a></span>
+                </div>
+                <div href="#" class="col-md col-12 d-inline-flex flex-column align-items-center">
+                    <img src="deal2.png" width="auto" height="130px" class="mb-4"/>
+                    <h4 class="d-inline-block mb-2">Gluten Free</h4>
+                    <span class="d-inline-block smol-text mb-4">Certified by the Gluten<br> Intolerance Group</span>
+                    <span><a class="smol-text mb-3" href="#">Learn More</a></span>
+                </div>
+                <div href="#" class="col-md col-12 d-inline-flex flex-column align-items-center">
+                    <img src="deal3.png" width="auto" height="130px" class="mb-4"/>
+                    <h4 class="d-inline-block mb-2">Dairy Free Meals</h4>
+                    <span class="d-inline-block smol-text mb-4">Dairy free prepared meals for<br> all tastes</span>
+                    <span><a  class="smol-text mb-3" href="#">Learn More</a></span>
+                </div>
+                <div href="#" class="col-md col-12 d-inline-flex flex-column align-items-center">
+                    <img src="deal4.png" width="auto" height="130px" class="mb-4"/>
+                    <h4 class="d-inline-block mb-2">Carb-Smart</h4>
+                    <span class="d-inline-block smol-text mb-4">Chef-crafted low-carb<br> meals</span>
+                    <span><a class="smol-text mb-3" href="#">Learn More</a></span>
+                </div>
+                <div href="#" class="col-md col-12 d-inline-flex flex-column align-items-center ">
+                    <img src="deal5.png" width="auto" height="130px" class="mb-4"/>
+                    <h4 class="d-inline-block mb-2">Calorie Conscious</h4>
+                    <span class="d-inline-block smol-text mb-4">Low-calorie meal plan with<br> perfect portions</span>
+                    <span><a href="#" class="smol-text mb-3">Learn More</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--common questions-->
+    <div class="container d-flex flex-column justify-content-center align-items-center margin-top mb-5">
+        <h1 class="heading-font mb-5 text-center">Common Questions</h1>
+        <a href="#answer1" onclick="rotate()"  data-bs-toggle="collapse" data-bs-target="#answer1" class="a-images container  d-flex justify-content-between">
+            <p class="text-primary fw-bold d-inline question">How many servings are your meal?</p>
+            <svg id="iconupdown1"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </a>
+        <div id="answer1" class="collapse answer">
+            The majority of our meals are single serving and meant to feed an average adult. We also offer multi-serve proteins and sides, which are designed to feed multiple people for extra mealtime flexibility. These delicious, ready-to-heat options can help you bulk up existing meals, simplify home cooking, or even build an entire meal—the choice is yours!<br><br>
+            Our 6-meal plan is perfect for a person looking for 6 dinners (or lunches!) a week. On average, our meals weigh in at about 13 ounces and range from 300 to 650 calories. If you have a larger household, we do offer a 12 meal per week subscription (it’s perfect for couples or a family of 4 looking for 3 meals per week). Plus, you can always order multiple subscriptions.
+        </div>
+        <div class="border-bottom"></div>
+
+        <a href="#answer2" onclick="rotate1()" data-bs-toggle="collapse" data-bs-target="#answer2" class="mt-4 a-images container question-con d-flex justify-content-between">
+            <p class="text-primary fw-bold d-inline question">Do You accomodate Dietary Preferences ?</p>
+            <svg id="iconupdown2"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down " viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </a>
+        <div id="answer2" class="collapse answer">
+            The majority of our meals are single serving and meant to feed an average adult. We also offer multi-serve proteins and sides, which are designed to feed multiple people for extra mealtime flexibility. These delicious, ready-to-heat options can help you bulk up existing meals, simplify home cooking, or even build an entire meal—the choice is yours!<br><br>
+            Our 6-meal plan is perfect for a person looking for 6 dinners (or lunches!) a week. On average, our meals weigh in at about 13 ounces and range from 300 to 650 calories. If you have a larger household, we do offer a 12 meal per week subscription (it’s perfect for couples or a family of 4 looking for 3 meals per week). Plus, you can always order multiple subscriptions.
+        </div>
+        <div class="border-bottom"></div>
+
+        <a href="#answer3" onclick="rotate2()"  data-bs-toggle="collapse" data-bs-target="#answer3" class="mt-4 a-images container question-con d-flex justify-content-between">
+            <p class="text-primary fw-bold d-inline question">How long do the meals last?</p>
+            <svg id="iconupdown3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down " viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </a>
+        <div id="answer3" class="collapse answer">
+            The majority of our meals are single serving and meant to feed an average adult. We also offer multi-serve proteins and sides, which are designed to feed multiple people for extra mealtime flexibility. These delicious, ready-to-heat options can help you bulk up existing meals, simplify home cooking, or even build an entire meal—the choice is yours!<br><br>
+            Our 6-meal plan is perfect for a person looking for 6 dinners (or lunches!) a week. On average, our meals weigh in at about 13 ounces and range from 300 to 650 calories. If you have a larger household, we do offer a 12 meal per week subscription (it’s perfect for couples or a family of 4 looking for 3 meals per week). Plus, you can always order multiple subscriptions.
+        </div>
+        <div class="border-bottom"></div>
+
+        <a href="#answer4" onclick="rotate3()" data-bs-toggle="collapse" data-bs-target="#answer4" class="mt-4 a-images container question-con d-flex justify-content-between">
+            <p class="text-primary fw-bold d-inline question">How do I heat up my meals?</p>
+            <svg id="iconupdown4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down " viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </a>
+        <div id="answer4" class="collapse answer">
+            The majority of our meals are single serving and meant to feed an average adult. We also offer multi-serve proteins and sides, which are designed to feed multiple people for extra mealtime flexibility. These delicious, ready-to-heat options can help you bulk up existing meals, simplify home cooking, or even build an entire meal—the choice is yours!<br><br>
+            Our 6-meal plan is perfect for a person looking for 6 dinners (or lunches!) a week. On average, our meals weigh in at about 13 ounces and range from 300 to 650 calories. If you have a larger household, we do offer a 12 meal per week subscription (it’s perfect for couples or a family of 4 looking for 3 meals per week). Plus, you can always order multiple subscriptions.
+        </div>
+        <div class="border-bottom"></div>
+
+        <a href="#answer5" onclick="rotate4()" data-bs-toggle="collapse" data-bs-target="#answer5" class="mt-4 a-images container question-con d-flex justify-content-between">
+            <p class="text-primary fw-bold d-inline question">How many servings are your meal?</p>
+            <svg id="iconupdown5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down " viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </a>
+        <div id="answer5" class="collapse answer">
+            The majority of our meals are single serving and meant to feed an average adult. We also offer multi-serve proteins and sides, which are designed to feed multiple people for extra mealtime flexibility. These delicious, ready-to-heat options can help you bulk up existing meals, simplify home cooking, or even build an entire meal—the choice is yours!<br><br>
+            Our 6-meal plan is perfect for a person looking for 6 dinners (or lunches!) a week. On average, our meals weigh in at about 13 ounces and range from 300 to 650 calories. If you have a larger household, we do offer a 12 meal per week subscription (it’s perfect for couples or a family of 4 looking for 3 meals per week). Plus, you can always order multiple subscriptions.
+        </div>
+        <div class="border-bottom"></div>
+
+        <a href="#answer6"  onclick="rotate5()" data-bs-toggle="collapse" data-bs-target="#answer6" class="mt-4 a-images container question-con d-flex justify-content-between">
+            <p class="text-primary fw-bold d-inline question">How does Shipping Work?</p>
+            <svg id="iconupdown6" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down " viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </a>
+        <div id="answer6" class="collapse answer">
+            The majority of our meals are single serving and meant to feed an average adult. We also offer multi-serve proteins and sides, which are designed to feed multiple people for extra mealtime flexibility. These delicious, ready-to-heat options can help you bulk up existing meals, simplify home cooking, or even build an entire meal—the choice is yours!<br><br>
+            Our 6-meal plan is perfect for a person looking for 6 dinners (or lunches!) a week. On average, our meals weigh in at about 13 ounces and range from 300 to 650 calories. If you have a larger household, we do offer a 12 meal per week subscription (it’s perfect for couples or a family of 4 looking for 3 meals per week). Plus, you can always order multiple subscriptions.
+        </div>
+        <div class="border-bottom"></div>
+
+        <a href="#answer7" onclick="rotate6()" data-bs-toggle="collapse" data-bs-target="#answer7" class="mt-4 a-images container question-con d-flex justify-content-between">
+            <p class="text-primary fw-bold d-inline question">How does Subscription Work?</p>
+            <svg id="iconupdown7" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down " viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </a>
+        <div id="answer7" class="collapse answer">
+            The majority of our meals are single serving and meant to feed an average adult. We also offer multi-serve proteins and sides, which are designed to feed multiple people for extra mealtime flexibility. These delicious, ready-to-heat options can help you bulk up existing meals, simplify home cooking, or even build an entire meal—the choice is yours!<br><br>
+            Our 6-meal plan is perfect for a person looking for 6 dinners (or lunches!) a week. On average, our meals weigh in at about 13 ounces and range from 300 to 650 calories. If you have a larger household, we do offer a 12 meal per week subscription (it’s perfect for couples or a family of 4 looking for 3 meals per week). Plus, you can always order multiple subscriptions.
+        </div>
+        <div class="border-bottom"></div>
+        
+    </div>
+
+    <!--hhhhhhh-->
+    <div class="container d-flex flex-column justify-content-center align-items-center margin-top mb-5">
+        <h2 class="text-center mt-5">Have other Questions ?</h2>
+        <a href="#">Visit our FAQs</a>
+    </div>
+
+
+    <!--foooooterrrrrrrrrrr-->
+
+<footer class="page-footer font-small indigo mb-5 ms-5">
+    <div class="container d-none d-md-block d-xl-block d-lg-block">
+      <div class="row">
+        <div class="col-lg-3">
+          <img src="freshly-removebg-preview.png" class="mt-3 mb-4" />
+          <p class="smol-text">@Freshly Inc.</p>
+  
+        </div>
+ 
+        <div class="col-lg-3">
+          <p class="footer-head lefty mt-3 mb-4">Company</p>
+          <p href="#!" class="a-images lefty smol-text text-muted text-start">Careers</p>
+          <p href="#!" class="a-images lefty smol-text text-muted text-start">Contact us</p>
+          <p href="#!" class="a-images lefty smol-text text-muted text-start">Terms</p>
+          <p href="#!" class="a-images  lefty smol-text text-muted text-start">Press</p>
+          <p href="#!" class="a-images lefty smol-text text-muted text-start">Privacy</p>
+          <p href="#!" class="a-images lefty smol-text text-muted text-start">Affiliates</p>
+          <p href="#!" class="a-images lefty smol-text text-muted text-start">Partnerships</p>
+  
+        </div>
+ 
+        <div class="col-lg-3 ">
+          <p class="footer-head lefty mt-3 mb-4">Learn More</p>
+          <p href="#!" class="a-images lefty smol-text text-muted text-start">Plans and Menu</p>
+          <p href="#!" class="a-images lefty smol-text text-muted text-start">Why Freshly?</p>
+          <p href="#!" class="a-images lefty smol-text text-muted text-start">Gifts</p>
+          <p href="#!" class="a-images  lefty smol-text text-muted text-start">Faqs</p>
+          <p href="#!" class="a-images lefty smol-text text-muted text-start">Blogs</p>
+          <p href="#!" class="a-images lefty smol-text text-muted text-start">Studnets</p>
+  
+        </div>
+ 
+        <div class="col-lg-3">
+            <p class="footer-head lefty mt-3 mb-4">Join Us</p>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram mx-1" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook mx-1" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter mx-1" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest mx-1" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
+                </svg>
+            </div>
+            <div class="my-3">
+                <img src="appstore.png" alt="app" width="120px" height="auto"/>
+            </div>
+            <div class="my-3">
+                <img src="google.png" alt="google" width="120px" height="auto"/>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="container d-flex flex-column d-lg-none d-md-none d-xl-none justify-content-center align-items-center">
+        <div class="d-flex">
+            <p href="#!" class="a-images lefty smol-text text-muted text-start mx-3 mt-2">Blogs</p>
+            <p href="#!" class="a-images lefty smol-text text-muted text-start mx-3 mt-2">Careers</p>
+            <p href="#!" class="a-images lefty smol-text text-muted text-start mx-3 mt-2">Contact us</p>
+            <p href="#!" class="a-images  lefty smol-text text-muted text-start mx-3 mt-2">Press</p>
+        </div>
+        <div class="d-flex">
+            <p href="#!" class="a-images lefty smol-text text-muted text-start mx-3 mt-2">Terms</p>
+            <p href="#!" class="a-images lefty smol-text text-muted text-start mx-3 mt-2">Privacy</p>
+            <p href="#!" class="a-images lefty smol-text text-muted text-start mx-3 mt-2">FAQs</p>
+            <p href="#!" class="a-images  lefty smol-text text-muted text-start mx-3 mt-2">Students</p>
+        </div>
+        <div class="d-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram mx-1 mt-4" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook mx-1 mt-4" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter mx-1 mt-4" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest mx-1 mt-4" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
+            </svg>
+        </div>
+        <div class="d-flex">
+            <div class="mx-3 mt-3">
+                <img src="appstore.png" alt="app" width="120px" height="auto"/>
+            </div>
+            <div class="mx-3 mt-3">
+                <img src="google.png" alt="google" width="120px" height="auto"/>
+            </div>
+        </div>
+        <div class="d-flex">
+            <p href="#!" class="a-images  lefty smol-text text-muted text-start mx-3 mt-4">@Freshly Inc.</p>
+        </div>
+
+
+    </div>
+  
+</footer>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
